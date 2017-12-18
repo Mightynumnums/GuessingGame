@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!---CDN for BOOTSSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  
+    <link rel = "stylesheet" type= 'text/css' href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+      <div id='app' class='center container overlay'>
+
+        <div id='headers'>
+         <h1 id = 'title center'>GUESSING GAME</h1>
+         <h3 id = 'subtitle center'>Guess a number between 1-100</h3>
+        </div>
+
+      <div id='main'>
+        <div id='input-parent'>
+          <input id='players-input' class='center' placeholder="?" maxlength='3' autofocus=autofocus></input>
+          <button id='submit' class='btn btn-info'>Go!</button>
+        </div>    
+      </div>
+
+          <div id='guesses'>
+           <ul id='guess-list'>
+              <li class = 'guess'>-</li>
+              <li class = 'guess'>-</li>
+              <li class = 'guess'>-</li>
+              <li class = 'guess'>-</li>
+
+           </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button type="button" class="btn btn-warning my-btn">A HINT, PERHAPS?</button>
+            <button type="button" class="btn btn-dark my-btn">RESET THE GAME</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class = 'center'>
+        <div class= 'row logo'>
+          <div class='col-sm-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4 id="prjname">Project by  ALEKSANDRA SHINELEVA</h4>
+          </div>
+
+          <div class='col-sm-4 logoGH'>
+            <img src='grace_hopper_academy copy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  </body>
+</html>
