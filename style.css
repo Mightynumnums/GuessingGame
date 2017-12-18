@@ -75,6 +75,7 @@ img {
 }
 
 #players-input {
+  opacity: .85;
   color:#4c5b56;
   border: 2px solid white;
   border-radius: 50%;
