@@ -110,6 +110,7 @@ $(document).ready(function() {
         $('#subtitle').text('Guess a number between 1-100!')
         $('.guess').text('-');
         $('#hint, #submit').prop("disabled",false);
+        $('#players-input').prop("disabled",false);
 
     })
 })
