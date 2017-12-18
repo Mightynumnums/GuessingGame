@@ -32,19 +32,20 @@ Game.prototype.playersGuessSubmission = function(guess) {
 Game.prototype.checkGuess = function() {
     if(this.playersGuess===this.winningNumber) {
         $('#hint, #submit').prop("disabled",true);
-        $('#subtitle').text("Press the Reset button to play again!")
+        $('#subtitle').text("Press the RESET THE GAME button to play again!")
         return 'You Win!'
     }
     else {
         if(this.pastGuesses.indexOf(this.playersGuess) > -1) {
-            return 'You have already guessed that number.';
+            return 'Oh, come on,You\'ve tried this before!';
         }
         else {
             this.pastGuesses.push(this.playersGuess);
             $('#guess-list li:nth-child('+ this.pastGuesses.length +')').text(this.playersGuess);
-            if(this.pastGuesses.length === 5) {
+            if(this.pastGuesses.length === 4) {
                 $('#hint, #submit').prop("disabled",true);
-                $('#subtitle').text("Press the Reset button to play again!")
+                $('#subtitle').text("Press the RESET THE GAME to play again!");
+                $('#players-input').prop("disabled",true);
                 return 'You Lose.';
             }
             else {
@@ -105,7 +106,7 @@ $(document).ready(function() {
 
     $('#reset').click(function() {
         game = newGame();
-        $('#title').text('Play the Guessing Game!');
+        $('#title').text('PLAY THE GUESSING GAME:');
         $('#subtitle').text('Guess a number between 1-100!')
         $('.guess').text('-');
         $('#hint, #submit').prop("disabled",false);
